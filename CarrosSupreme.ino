@@ -1,4 +1,4 @@
-// required libraries - Servo for the servo, NewPing for the ultrasound sensor
+// required libraries - Servo for the servo, NewPing for the Ultrasonic sensor
 #include <Servo.h>
 #include <NewPing.h>
 
@@ -9,11 +9,11 @@ int speed = 100; // speed to move the motors at
 
 const int distanceTriggerPin = A0, distanceEcoPin = A1, servoPin = A2; // sensor pins
 
-// creating objects eg. distanceSensor will be our ultrasound sensor, distanceSensorServo will be our servo
-NewPing distanceSensor(distanceTriggerPin,distanceEcoPin); // NOTE: we have to specify the trigger and echo pins. trigger sends signal for sending ultrasound waves, and echo is used to give back data about the waves.
+// creating objects eg. distanceSensor will be our ultrasonic sensor, distanceSensorServo will be our servo
+NewPing distanceSensor(distanceTriggerPin,distanceEcoPin); // NOTE: we have to specify the trigger and echo pins. trigger sends signal for sending ultrasonic waves, and echo is used to give back data about the waves.
 Servo distanceSensorServo;
 
-int distance, distanceRight, distanceLeft; // distance variables that we will update with values from our ultrasound sensor
+int distance, distanceRight, distanceLeft; // distance variables that we will update with values from our ultrasonic sensor
 int dangerousDistance = 15; // the maximum distance for some obstacle to be dangerous
 
 // void setup - code inside runs once in the starting
