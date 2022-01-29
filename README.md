@@ -1,4 +1,4 @@
-# TB6612FNG_ArduinoUno_Car
+# Carros
 Arduino code for making a robot car using the TB6612FNG!
 
 The build video [YouTube]:
